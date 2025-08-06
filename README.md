@@ -4,6 +4,7 @@ A fun and interactive memory game built using **HTML**, **CSS**, and **JavaScrip
 Test your memory and reflexes as you follow the color pattern and climb the levels!
 
 ## 🚀 Live Demo
+https://dwipdarpon20.github.io/simonsays/
 
 ## 🧠 Features
 
