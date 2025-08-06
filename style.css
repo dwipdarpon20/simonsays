@@ -1,0 +1,146 @@
+/* GENERAL */
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #003153;
+    color: rgb(219, 223, 224);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+    color: #ffffff;
+}
+h2, h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* MAIN GAME BOX */
+.mainbox {
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.one, .two {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.box {
+    border: 2px solid black;
+    height: 180px;
+    width: 180px;
+    border-radius: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.bx1 {
+    background-color: #B027F5;   
+}
+.bx2 {
+    background-color: #27D3F5;   
+}
+.bx3 {
+    background-color: #4927F5;   
+}
+.bx4 {
+    background-color: #F5276C;   
+}
+
+/* FLASH EFFECTS */
+.btnFlash {
+    background-color: black !important;
+}
+.btnFlash2 {
+    background-color: #32CD32 !important;
+    transform: scale(1.1);
+}
+
+/* HINT SECTION */
+.hintbox {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hintbox button {
+    background-color: #ffa500;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hintbox button:hover {
+    background-color: #ff8c00;
+}
+
+.hintbox p {
+    color: #eee;
+    font-size: 1rem;
+    font-style: italic;
+    min-height: 24px;
+}
+
+.playbtn {
+    background-color: #ffa500;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.red {
+    background-color: red;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 700px) {
+    .mainbox {
+        height: auto;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .one, .two {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box {
+        height: 120px;
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2, h3 {
+        font-size: 1.2rem;
+    }
+}
